@@ -653,13 +653,13 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 0.5
   m_AngularDrag: 0
-  m_GravityScale: 2.5
+  m_GravityScale: 100
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 5
 --- !u!114 &706129586
 MonoBehaviour:
@@ -687,7 +687,7 @@ MonoBehaviour:
     y: 0
     z: 0
   axisDirection:
-    x: 1
+    x: 10
     y: 1
     z: 1
   spriteNeutral: {fileID: 21300000, guid: 9dfdebfff98de9c468244febed0645a8, type: 3}
@@ -1026,9 +1026,9 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.17980021
+    x: 0.2257587
     y: 0
-    width: 0.6403996
+    width: 0.5484826
     height: 1
   near clip plane: 0.1
   far clip plane: 10
@@ -1186,12 +1186,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnObstacles: 1
   spawnFrequencyMean: 2
-  spawnFrequencyStd: 0
+  spawnFrequencyStd: 3
   spawnOffset:
     x: 0
     y: 2
     z: 0
-  spawnSize: 1
+  spawnSize: 0.6
   spawnLayer: Obstacle
   obstaclePrefab: {fileID: 444823138257878674, guid: d9e6dffab2dc3ef4dbf678bf85c63c93, type: 3}
 --- !u!1 &1213650991
@@ -1304,6 +1304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
