@@ -651,7 +651,7 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 1
+  m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 1
   m_AngularDrag: 0
@@ -681,7 +681,7 @@ MonoBehaviour:
   obstacleLayerMask:
     serializedVersion: 2
     m_Bits: 1024
-  rotationSpeed: 300
+  rotationSpeed: 10
   rotateAxis:
     x: 1
     y: 0
@@ -1026,9 +1026,9 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.2257587
+    x: 0.22316802
     y: 0
-    width: 0.5484826
+    width: 0.55366397
     height: 1
   near clip plane: 0.1
   far clip plane: 10
